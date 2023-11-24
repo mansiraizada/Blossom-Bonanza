@@ -15,7 +15,6 @@ html, body{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% 85% ;
-    /* background-color: red; */
 }
 
 #nav{
@@ -25,16 +24,13 @@ html, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
 }
 
 #nav-left{
     display: flex;
     width: 30%;
     height: 100%;
-    /* justify-content: center; */
     align-items: center;
-    /* background-color: yellow; */
     padding-left: 1vw;
 }
 
@@ -49,7 +45,6 @@ html, body{
     justify-content: end;
     align-items: center;
     padding-right: 1vw;
-    /* background-color: purple; */
 }
 
 #nav-right h4{
@@ -57,38 +52,22 @@ html, body{
 }
 
 #brand{
-    /* height: 100%; */
-    font-size: 3vw;
-    /* background-color: pink; */
-}
-/* #nav-left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 100%;
-    background-color: brown;
+    font-size: 2.8vw;
 }
 
 #nav-left h4{
-    height: 100%;
-    width: 100%;
-    background-color: pink;
+    padding: 1vw 1vw 1vw 1vw;
 }
-
 
 #brand{
     padding: 0px 50px 0px 50px;
     font-size: 30px;
     font-weight: 400;
-} */
+} 
 
 #left{
-    /* margin: 50px 16px 5px 20px; */
     padding: 30px;
-    /* grid-row: 2/4; */
     grid-column: 1/2;
-    /* background-color: blue; */
 }
 
 #left i{
@@ -110,7 +89,6 @@ html, body{
     justify-content: center;
     align-items: center;
     padding: 8px;
-    /* background-color: pink; */
     border: 1px solid rgb(29, 28, 28);
     border-radius: 30px;
 }
@@ -136,20 +114,14 @@ html, body{
 }
 
 #bottom{
-    /* background-color: pink; */
     margin-top: 15%;
     font-size: 1.3vw;
     font-weight: 500;
 }
 
 #right{
-    /* position: relative; */
     overflow: hidden;
-    /* margin: 50px 20px 0px 16px; */
-    /* grid-row: 2/4; */
     grid-column: 2/3;
-    /* padding: 10px; */
-    /* background-color: yellow;    */
 }
 
 #right img{
