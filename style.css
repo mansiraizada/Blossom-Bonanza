@@ -27,38 +27,33 @@ html, body{
     background-color: #7f7482;
 }
 
-#nav-left{
+#nav-left, #nav-right{
     display: flex;
     width: 30%;
+    justify-content: start;
     height: 100%;
     align-items: center;
     padding-left: 1vw;
 }
 
-#nav-left h4{
+#nav-left h4, #nav-right h4{
     padding: 1vw 1vw 1vw 1vw;
 }
 
 #nav-right{
-    display: flex;
-    width: 30%;
-    height: 100%;
     justify-content: end;
-    align-items: center;
     padding-right: 1vw;
 }
 
-#nav-right h4{
-    padding: 1vw 1vw 1vw 1vw;
+#nav-left h4:hover, #nav-right h4:hover{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 800;
 }
 
 #brand{
     font-size: 2.5vw;
     font-weight: 500;
-}
-
-#nav-left h4{
-    padding: 1vw 1vw 1vw 1vw;
 }
 
 #left{
@@ -90,11 +85,11 @@ html, body{
     border-radius: 30px;
 }
 
-#button p{
+#colors{
     font-size: 20px;
 }
 
-#red{
+#red, #yellow{
     margin-left: 5px;
     width: 20px;
     height: 20px;
@@ -103,11 +98,11 @@ html, body{
 }
 
 #yellow{
-    margin-left: 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: #dc7e97;   
+}
+
+#yellow:hover, #red:hover{
+    cursor: pointer;
 }
 
 #bottom{
@@ -121,7 +116,6 @@ html, body{
     overflow: hidden;
     grid-column: 2/3;
     padding: 5px 150px 0px 5px;
-    /* background-color: yellow; */
     display: flex;
     position: relative;
 }
@@ -130,29 +124,160 @@ html, body{
     position: absolute;
     width: 120px;
     height: 120px;
-    /* background-color: purple; */
     top: 44%;
     left: 72%;
     border-radius: 50%;
     background-color: #7f7482;
-    /* position: relative; */
 }
 
 #add-to-cart p{
+    height: 100%;
     position: absolute;
-    top: 44%;
     left: 20%;
     font-size: 15px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 #add-to-cart:hover{
     cursor: pointer;
-    background-color:#77647d;
+    background-color:#55415a;
 }
+
+#add-to-cart p:hover{
+    font-size: 17px;
+    font-weight: 800;
+    left: 15%;
+}
+
 #right img{
     width: 100%;
     height: 100%; 
     object-fit: cover;
     object-position: 0% 60%;
 } 
+
+#bottom_m, #button_m{
+    display: none;
+}
+
+@media (max-width:600px){
+    #main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+    }
+
+#left #button, #bottom, #nav-left, #nav-right, #right img{
+    display: none;
+}
+
+#nav{
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1/2;
+    background-color: #7f7482;
+}
+
+#brand{
+    font-size: 5vw;
+    font-weight: 600;
+    padding-left: 5vw;
+}
+
+#left{
+    margin-top: 0;
+    padding: 5vw;
+    grid-column: 1;
+    grid-row: 2/3;
+    background-color: pink;
+    background-image: url(./hero.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+}
+
+#left i{
+    font-size: 5vw;
+    font-weight: 550;
+}
+
+#left h3{
+    font-size: 4.5vw;
+    font-weight: 550;
+    line-height: 1.5;
+}
+
+#right{
+    margin-top: 0;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 3/4;
+    padding: 0;
+    display: flex;
+    position: none;
+}
+
+#button_m{
+    width: 100%;
+    height: 22%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 2px solid rgb(29, 28, 28);
+    border-radius: 30px;
+    position: absolute;
+}
+
+#colors{
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+
+#add-to-cart{
+    width: 100%;
+    height: 22%;
+    top: 30%;
+    left: 0;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: #7f7482; 
+    display: flex;
+    justify-content: start;
+}
+
+#add-to-cart p{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    font-size: 5vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+} 
+
+#add-to-cart p:hover{
+    cursor: pointer;
+    font-size: 6vw;
+    font-weight: 800;
+    left: 0;
+    background-color:#55415a;
+}
+
+#bottom_m{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    margin-top: 30%;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5vw;
+}
+}
