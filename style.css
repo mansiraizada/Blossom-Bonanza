@@ -196,6 +196,7 @@ html, body{
 #icon{
     display: flex;
     justify-content: end;
+    padding-right: 5vw;
 }
 
 #left{
